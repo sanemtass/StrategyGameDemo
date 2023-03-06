@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Soldier
   - Item
+  - Bullet
+  - Soldier1
+  - Soldier2
+  - Soldier3
+  - Soldier
   layers:
   - Default
   - TransparentFX

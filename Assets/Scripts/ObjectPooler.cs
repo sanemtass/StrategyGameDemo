@@ -7,6 +7,7 @@ public class ObjectPooler : MonoBehaviour
     public static ObjectPooler Instance;
 
     public List<GameObject> pooledBulletsList = new List<GameObject>();
+
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private int poolSize;
 
@@ -16,6 +17,11 @@ public class ObjectPooler : MonoBehaviour
 
         else Destroy(this);
         
+    }
+
+    private void Start()
+    {
+        CreateBulletPool(Mathf.CeilToInt(100));
     }
 
     public void CreateBulletPool(int amount)

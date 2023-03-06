@@ -9,8 +9,6 @@ public interface IClickable
 
 public interface IDamageable<T>
 {
-    int Health { get; set; }
-
     void Damage(T damageTaken);
 }
 

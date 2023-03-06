@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 3161392932637868895}
   - component: {fileID: 3083470569627282755}
   - component: {fileID: 9129311586465332679}
+  - component: {fileID: 7829399086545597980}
   m_Layer: 0
   m_Name: Barrack
   m_TagString: Item
@@ -165,3 +166,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.76, y: 2.9973938}
   m_EdgeRadius: 0
+--- !u!114 &7829399086545597980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395305700144209186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4573dc5409c8c467d84f27122b7e4dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 54701a0834a2d47ff92a751d9fda6a28, type: 2}

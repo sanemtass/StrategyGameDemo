@@ -13,7 +13,6 @@ public class CustomCursor : MonoBehaviour, IClickable
     [SerializeField] private GameObject barrackPrefab, powerPlantPrefab;
     private GameObject prefab;
 
-
     private void Start()
     {
         InitializeItem(item);
@@ -26,32 +25,16 @@ public class CustomCursor : MonoBehaviour, IClickable
 
     public void SelectPrefab()
     {
-        //if (item.type == ItemType.Barrack)
-        //{
-        //    prefab = barrackPrefab;
-        //    UIManager.Instance.InitializeItem(item);
-        //    UIManager.Instance.InitializeSoldier(soldier);
-        //}
-        //else if (item.type == ItemType.PowerPlant)
-        //{
-        //    prefab = powerPlantPrefab;
-        //    UIManager.Instance.InitializeItem(item);
-        //}
-
-        //GenerateObject();
-
         switch (item.type)
         {
             case ItemType.Barrack:
                 prefab = barrackPrefab;
-                //UIManager.Instance.InitializeItem(item);
-                //UIManager.Instance.InitializeSoldier(soldierType);
                 break;
             case ItemType.PowerPlant:
                 prefab = powerPlantPrefab;
-                //UIManager.Instance.InitializeItem(item);
                 break;
         }
+
         GenerateObject();
     }
 
@@ -63,7 +46,6 @@ public class CustomCursor : MonoBehaviour, IClickable
     private Vector3 mousePos()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
     }
 
     public void Click()

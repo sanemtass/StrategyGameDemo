@@ -19,9 +19,10 @@ GameObject:
   - component: {fileID: 8125228316819731420}
   - component: {fileID: 2178708165489879291}
   - component: {fileID: 6462085448609207858}
+  - component: {fileID: 4428170036107991328}
   m_Layer: 0
   m_Name: Soldier3
-  m_TagString: Soldier
+  m_TagString: Soldier3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 197f1c2a0ca5c8945bafec5af05be128, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -178,7 +179,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -312,6 +313,20 @@ MonoBehaviour:
   bulletPrefab: {fileID: 360821914671224305, guid: b84be347e7c1e47188d0f95d61a7bd7d, type: 3}
   firePoint: {fileID: 4942471445700787449}
   bulletForce: 20
+--- !u!114 &4428170036107991328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3214345865012432829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb5dd6149c4a46a7b05a6b0f0daf299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldierType: {fileID: 11400000, guid: 601693e6291634b5d8f5e7a284509a7f, type: 2}
+  isRealize: 1
 --- !u!1 &3864459881918549668
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3864459881918549668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.863, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

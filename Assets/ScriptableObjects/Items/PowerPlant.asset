@@ -15,3 +15,6 @@ MonoBehaviour:
   name: Power Plant
   type: 1
   image: {fileID: 21300000, guid: 021907f227a049e40b4234e459451efd, type: 3}
+  health: 0
+  maxHealth: 50
+  takeDamage: 10

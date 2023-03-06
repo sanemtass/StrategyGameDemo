@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrackPrefab : MonoBehaviour
+public class UnitClickController : MonoBehaviour
 {
-    public static BarrackPrefab instance;
-    public bool isSelected;
+    public static UnitClickController Instance;
+
     [SerializeField] private GameObject production;
     [SerializeField] private GameObject informationMenu;
+
+    public bool isSelected;
 
     void Update()
     {

@@ -11,11 +11,6 @@ public class Shooter : MonoBehaviour
     private bool isShooting;
     private float timeToDestroy = 2f;
 
-    private void Start()
-    {
-        ObjectPooler.Instance.CreateBulletPool(Mathf.CeilToInt(30));
-    }
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(1) && !isShooting && GetComponent<SoldierMovementController>().isAvailable)
